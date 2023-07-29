@@ -22,7 +22,7 @@ def store(request):
 
      products = Product.objects.all()
      context = {'products': products,'cartItems':cartItems}
-     return render(request,'store/store.html',context)
+     return render(request,'store/index.html',context)
 
 
 
